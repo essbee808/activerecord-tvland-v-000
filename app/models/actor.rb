@@ -12,6 +12,6 @@ class Actor < ActiveRecord::Base
     characters_name = self.characters.collect {|el| el[:name]}
     shows_name = self.shows.collect {|el| el[:name]}
     binding.pry
-    "#{characters_array[0]} - #{shows_array[0]}"
+    "#{characters_name[0]} - #{shows_name[0]}"
   end
 end
