@@ -9,8 +9,8 @@ class Actor < ActiveRecord::Base
   end
   
   def list_roles
-    binding.pry
     characters_array = self.characters.collect {|el| el[:name]}
     shows_array = self.shows.collect {|el| el[:name]}
+    binding.pry
   end
 end
