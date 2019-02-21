@@ -11,5 +11,6 @@ class Actor < ActiveRecord::Base
   def list_roles
     binding.pry
     characters_array = self.characters.collect {|el| el[:name]}
+    
   end
 end
