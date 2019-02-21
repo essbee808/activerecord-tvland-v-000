@@ -11,6 +11,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     characters_array = self.characters.collect {|el| el[:name]}
     shows_array = self.shows.collect {|el| el[:name]}
+    binding.pry
     "#{characters_array[0]} - #{shows_array[0]}"
   end
 end
